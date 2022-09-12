@@ -1,0 +1,42 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <div class="col-12" id="divSelect">Select range interval to create misterious number.</div>
+        <div class="col-3" id="min">
+            Min:
+            <input type="number" id="minSecret" value="Min" />
+        </div>
+        <div class="col-3" id="max">
+            Max:
+            <input type="number" id="maxSecret" value="Max" />
+        </div>
+        <div class="col-6" style="visibility: hidden">
+            value: <input type="text" id="generatedSecret" value="generatedSecretValue" />
+        </div>
+        <div class="col-3" id="userInputDiv">
+            Name: <input type="text" id="userInput" />
+        </div>
+        <div class="col-6" id="divBet">
+            Secret Number:
+            <input type="number" id="bet" />
+        </div>
+        <div class="col-6">&nbsp;</div>
+    </div>
+    
+    
+    <div><label id="num" /></div>
+    <div class="row">
+        <div class="col-12">
+            <input type="button" id="sendButton" value="Submit"/>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/poll.js"></script>
